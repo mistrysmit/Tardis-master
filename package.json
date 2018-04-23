@@ -1,0 +1,46 @@
+{
+  "name": "Tardis",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android ",
+    "ios": "react-native run-ios --simulator='iPhone X'",
+    "server": "node ./server/app.js",
+    "start": "node node_modules/react-native/local-cli/cli.js start ",
+    "test": "jest --watchAll"
+  },
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "dependency": "^0.0.1",
+    "enzyme": "^3.3.0",
+    "react": "^16.3.0-alpha.1",
+    "react-native": "0.54.2",
+    "react-native-vector-icons": "^4.6.0",
+    "react-navigation": "^1.5.11",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-jest": "23.0.0-alpha.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react-native": "4.0.0",
+    "eslint": "^4.19.0",
+    "eslint-plugin-react": "^7.7.0",
+    "flow-bin": "^0.65.0",
+    "jest": "22.4.2",
+    "react-test-renderer": "^16.3.0-alpha.1"
+  },
+  "jest": {
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|react-navigation|react-native-vector-icons|react-native-safe-area-view)/)"
+    ]
+  },
+  "workspaces": [
+    "server"
+  ]
+}
